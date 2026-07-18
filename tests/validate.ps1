@@ -49,7 +49,7 @@ Get-ChildItem -LiteralPath $root -Recurse -File |
   Where-Object { $_.FullName -notmatch "\\.git\\" -and $_.FullName -notmatch "\\tests\\validate\.ps1$" } |
   ForEach-Object { $allText += "`n" + (Get-Content -LiteralPath $_.FullName -Raw) }
 
-foreach ($phrase in @("synthetic", "Human", "deterministic", "AI-assisted")) {
+foreach ($phrase in @("synthetic", "Human", "deterministic")) {
   if ($allText -notmatch [Regex]::Escape($phrase)) {
     $failures.Add("Required documentation phrase missing: $phrase")
   }

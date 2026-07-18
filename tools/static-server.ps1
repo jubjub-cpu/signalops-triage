@@ -16,13 +16,6 @@ if ($nodeCommand) {
   $candidates.Add($nodeCommand.Source)
 }
 
-if ($env:USERPROFILE) {
-  $bundledNode = Join-Path $env:USERPROFILE ".cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe"
-  if (Test-Path -LiteralPath $bundledNode -PathType Leaf) {
-    $candidates.Add($bundledNode)
-  }
-}
-
 $node = $null
 foreach ($candidate in $candidates) {
   if ($candidate -and (Test-Path -LiteralPath $candidate -PathType Leaf)) {

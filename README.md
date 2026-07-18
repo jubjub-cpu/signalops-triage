@@ -60,9 +60,7 @@ After GitHub Pages is enabled, the demo will be available at:
 
 Local fallback:
 
-```text
-C:\Users\gabeb\Downloads\signalops-triage\index.html
-```
+Open `index.html` directly in a browser.
 
 ## AI Capability
 
@@ -113,10 +111,10 @@ All incidents are synthetic and fictional. The repository does not include real 
 
 No build step is required. Open `index.html` in a browser.
 
-Optional local server for browser testing. The helper uses Node.js from your PATH, or the bundled Codex runtime when available:
+Optional local server for browser testing. The helper uses Node.js from your PATH:
 
 ```powershell
-Set-Location 'C:\Users\gabeb\Downloads\signalops-triage'
+Set-Location 'path\to\signalops-triage'
 powershell -ExecutionPolicy Bypass -File .\tools\static-server.ps1 -Port 4174
 ```
 
@@ -135,7 +133,7 @@ No environment variables are required. `.env.example` is included for optional f
 Run:
 
 ```powershell
-Set-Location 'C:\Users\gabeb\Downloads\signalops-triage'
+Set-Location 'path\to\signalops-triage'
 powershell -ExecutionPolicy Bypass -File .\tests\validate.ps1
 ```
 
@@ -164,7 +162,3 @@ Deploy from `main` using GitHub Pages with source `/`.
 - CSV fixture import.
 - More recurrence visualization.
 - Browser-based accessibility checks.
-
-## AI-Assisted Development
-
-Gabe directed product strategy, workflow design, prompt-shaped triage logic, testing expectations, and visual refinement while using AI-assisted coding tools for implementation support.

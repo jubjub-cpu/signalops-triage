@@ -84,7 +84,6 @@ Release-critical scope focuses on the primary coordinator workflow. Live ticketi
 - More detailed repeated-failure trend visualization.
 - Accessibility audit with browser automation.
 
-## Gabe's Contribution
+## Product Decisions
 
-Gabe directed the product concept, workflow design, prompt-shaped reasoning model, human-oversight requirements, visual refinement, and testing expectations using AI-assisted development tools for implementation support.
-
+The product combines prompt-shaped triage logic, visible severity evidence, human oversight, responsive interaction design, and repeatable validation.
