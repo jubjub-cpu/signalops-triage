@@ -19,4 +19,8 @@ Validated on July 18, 2026.
 
 ## Deployment verification
 
-The same browser suite runs against `https://jubjub-cpu.github.io/signalops-triage/` using `SIGNALOPS_BASE_URL`.
+Verified on July 18, 2026 at `https://jubjub-cpu.github.io/signalops-triage/`.
+
+- GitHub Pages deployed commit `185e8b7` successfully.
+- The complete browser suite passed against the deployed site with zero console errors, failed requests, or desktop/mobile overflow.
+- Deployed axe-core audit passed at desktop and mobile viewports with zero violations.
