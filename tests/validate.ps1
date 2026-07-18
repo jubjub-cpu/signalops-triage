@@ -9,6 +9,9 @@ $required = @(
   "README.md",
   "docs/CASE_STUDY.md",
   "docs/RELEASE_NOTES.md",
+  "docs/VALIDATION.md",
+  "tests/browser-smoke.mjs",
+  "package.json",
   "tools/static-server.ps1",
   "tools/static-server.mjs",
   ".env.example",
@@ -55,7 +58,7 @@ foreach ($phrase in @("synthetic", "Human", "deterministic")) {
   }
 }
 
-foreach ($pattern in @("sk-[A-Za-z0-9]{20,}", "ghp_[A-Za-z0-9]{20,}", "gho_[A-Za-z0-9]{20,}", "BEGIN RSA PRIVATE KEY", "BEGIN OPENSSH PRIVATE KEY")) {
+foreach ($pattern in @("(?i)gmail\.com", "(?i)C:\\Users\\", "(?i)Codex", "(?i)ChatGPT", "sk-[A-Za-z0-9]{20,}", "ghp_[A-Za-z0-9]{20,}", "gho_[A-Za-z0-9]{20,}", "BEGIN RSA PRIVATE KEY", "BEGIN OPENSSH PRIVATE KEY")) {
   if ($allText -match $pattern) {
     $failures.Add("Potential secret pattern found: $pattern")
   }

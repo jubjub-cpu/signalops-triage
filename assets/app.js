@@ -91,7 +91,7 @@
         </article>
         <article class="output-block">
           <h3>Severity Score</h3>
-          <div class="meter" aria-label="Severity score ${analysis.result.score} of 100">
+          <div class="meter" role="meter" aria-label="Severity score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${analysis.result.score}">
             <span style="width:${analysis.result.score}%"></span>
           </div>
           <p>${analysis.result.score}/100 based on impact language, recurrence, and fallback availability.</p>
@@ -156,4 +156,3 @@
   renderQueue();
   renderOutput();
 })();
-

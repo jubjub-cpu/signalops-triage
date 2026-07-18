@@ -2,6 +2,8 @@
 
 AI-assisted field-service incident triage with human-approved dispatch recommendations.
 
+[Live demo](https://jubjub-cpu.github.io/signalops-triage/) | [Portfolio](https://jubjub-cpu.github.io/gabe-ai-product-portfolio/) | [v1.0.1 release](https://github.com/jubjub-cpu/signalops-triage/releases/tag/v1.0.1)
+
 ## Overview
 
 SignalOps Triage is a standalone product demo for operations teams that review ATM, kiosk, locker, or equipment-maintenance incidents. It turns a synthetic incident note into a classification, severity score, repeated-failure signal, dispatch recommendation, and audit trail.
@@ -54,7 +56,7 @@ Mobile workflow:
 
 ## Live Demo
 
-After GitHub Pages is enabled, the demo will be available at:
+Public deployment:
 
 `https://jubjub-cpu.github.io/signalops-triage/`
 
@@ -89,6 +91,7 @@ docs/
   CASE_STUDY.md
   RELEASE_NOTES.md
 tests/
+  browser-smoke.mjs
   validate.ps1
 tools/
   static-server.mjs
@@ -135,7 +138,10 @@ Run:
 ```powershell
 Set-Location 'path\to\signalops-triage'
 powershell -ExecutionPolicy Bypass -File .\tests\validate.ps1
+node .\tests\browser-smoke.mjs
 ```
+
+For deployed verification, set `SIGNALOPS_BASE_URL=https://jubjub-cpu.github.io/signalops-triage/` before running the browser suite.
 
 ## Deployment
 
