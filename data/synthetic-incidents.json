@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ATM-2041",
+    "title": "Cash recycler jam after cassette refill",
+    "statement": "Fictional ATM incident note for deterministic demo mode."
+  },
+  {
+    "id": "KSK-118",
+    "title": "Kiosk screen frozen during check-in",
+    "statement": "Fictional kiosk incident note for deterministic demo mode."
+  },
+  {
+    "id": "LKR-77",
+    "title": "Package locker door sensor mismatch",
+    "statement": "Fictional smart-locker incident note for deterministic demo mode."
+  }
+]
+

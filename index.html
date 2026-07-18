@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SignalOps Triage - AI-assisted field-service incident triage</title>
+  <meta name="description" content="A synthetic-data demo for AI-assisted field-service incident triage with human-approved dispatch recommendations.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Gabe - AI Digital Product Developer</p>
+      <h1>SignalOps Triage</h1>
+      <p class="subtitle">AI-assisted field-service incident triage</p>
+    </div>
+    <nav aria-label="Project links">
+      <a href="#demo">Demo</a>
+      <a href="#case-study">Case Study</a>
+      <a href="https://github.com/jubjub-cpu/gabe-ai-product-portfolio">Portfolio</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Operations intelligence</p>
+        <h2>Turn messy equipment incident notes into a reviewable dispatch recommendation.</h2>
+        <p>
+          SignalOps is a local-first, synthetic-data product demo for ATM, kiosk, locker, and equipment-maintenance teams.
+          It shows where AI can help coordinators classify incidents, spot repeated-failure cues, score urgency, and draft technician actions while leaving dispatch approval to a human.
+        </p>
+        <div class="button-row">
+          <a class="button-link" href="#demo">Open workflow</a>
+          <a class="button-link secondary" href="docs/CASE_STUDY.md">Read case study</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="Release summary">
+        <div><strong>3</strong><span>synthetic incident samples</span></div>
+        <div><strong>0</strong><span>real banking records</span></div>
+        <div><strong>1</strong><span>human approval gate</span></div>
+        <div><strong>100%</strong><span>local demo mode</span></div>
+      </div>
+    </section>
+
+    <section class="problem-grid" aria-label="Product context">
+      <article>
+        <h3>Business Problem</h3>
+        <p>Operations teams lose time when field reports arrive as inconsistent notes, recurrence patterns are easy to miss, and dispatch actions are not clearly justified.</p>
+      </article>
+      <article>
+        <h3>Target User</h3>
+        <p>Field-service coordinators, ATM/kiosk operations leads, and maintenance teams reviewing incidents before assigning a technician.</p>
+      </article>
+      <article>
+        <h3>AI Role</h3>
+        <p>Classify incident type, score severity, identify repeated-failure language, and draft an action plan in deterministic demo mode.</p>
+      </article>
+      <article>
+        <h3>Human Oversight</h3>
+        <p>No recommendation is final until a coordinator approves or sends it back for more context.</p>
+      </article>
+    </section>
+
+    <section id="demo" class="workspace" aria-label="SignalOps demo workspace">
+      <aside class="tool-panel">
+        <div>
+          <p class="eyebrow">Incident intake</p>
+          <h2>Queue</h2>
+        </div>
+        <div id="incident-list" class="sample-list" aria-label="Synthetic incident samples"></div>
+        <label for="incident-text">Incident note</label>
+        <textarea id="incident-text"></textarea>
+        <button type="button" id="classify">Classify and recommend</button>
+      </aside>
+      <section id="output" class="output-panel" aria-live="polite"></section>
+    </section>
+
+    <section id="case-study" class="case-strip">
+      <div>
+        <p class="eyebrow">Case study snapshot</p>
+        <h2>Why this would matter to a business</h2>
+      </div>
+      <p>
+        SignalOps demonstrates a practical middle ground: AI helps structure the incident review,
+        but the team keeps accountability for dispatch, escalation, and customer-facing action.
+        The demo uses fictional equipment records only.
+      </p>
+    </section>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
+
